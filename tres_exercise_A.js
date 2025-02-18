@@ -8,7 +8,7 @@ const grapQLEndpoint = "https://api.prod.tres.finance/graphql";
 const clientId = "DMVBrTzb5nlrnuwqUswUsn2YsVBZLG9w";
 const clientSecret = "G6LctpdNNV7K4kyYo7g53Mo2-8vgcgDXajVUt5-xol-EEmbp1-kv_dUjcCp6QtMn";
 
-// Authentication
+// Authentication 
 async function getAccessToken(clientId, clientSecret) {
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'; //  disable SSL verify
         const response = await fetch(grapQLEndpoint, {
